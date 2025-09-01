@@ -1,7 +1,7 @@
 async function getMessage() {
-  response = await fetch("http://mono-repo-h4fs.onrender.com/");
-  message = await response.json();
-  placeForMessage = document.getElementById("message");
+  const response = await fetch("http://mono-repo-h4fs.onrender.com/");
+  const message = await response.json();
+  const placeForMessage = document.getElementById("message");
   placeForMessage.textContent = message;
 }
 getMessage();
